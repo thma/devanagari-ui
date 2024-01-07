@@ -1,6 +1,6 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.35.2.
+-- This file has been generated from package.yaml by hpack version 0.36.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -36,6 +36,7 @@ executable devanagari-ui
   build-depends:
       base >=4.7 && <5
     , devanagari-transliterations
+    , port-utils
     , process
     , servant
     , servant-server

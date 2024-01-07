@@ -1,3 +1,5 @@
+
+// the server port is defined in the port.js file, which is generated on server start up.
 var serverUrl = "http://localhost:" + port + "/transliterate"; 
 
 function getInputAsJson() {
@@ -20,9 +22,7 @@ function transliterate() {
                     $("#alert").css('opacity', '1.0');
                }
     });
-
 }
-
 
 $(document).ready(function() {
     new ClipboardJS('.clp');

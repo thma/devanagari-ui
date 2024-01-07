@@ -27,6 +27,7 @@ dependencies:
 - warp
 - text
 - process
+- port-utils
 
 ghc-options:
 - -Wall
