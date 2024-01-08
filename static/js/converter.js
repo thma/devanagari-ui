@@ -3,7 +3,7 @@
 var serverUrl = "http://localhost:" + port + "/transliterate"; 
 
 function getInputAsJson() {
-    return "\"" + $('#input').val() + "\"";
+    return JSON.stringify($('#input').val());
 }
 
 function transliterate() {

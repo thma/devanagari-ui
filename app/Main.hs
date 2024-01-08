@@ -24,7 +24,6 @@ import           System.Environment       (getArgs)
 import           System.Exit              (exitFailure)
 import           System.Info              (os)
 import           System.Process           (createProcess, shell)
-import           Control.Monad.IO.Class   (MonadIO(liftIO))
 
 -- | API for the devanagari-ui
 --   POST /transliterate with an input text returns a tuple of four texts in four scripts:
@@ -46,8 +45,6 @@ devanagariServer = transliterationHandler :<|> serveDirectoryFileServer "static"
           iso = toIso tokens
           iast = toIast tokens
           hk = toHarvard tokens
-      liftIO $ putStrLn $ "input:  " ++ show input
-      --liftIO $ putStrLn $ "tokens: " ++ show tokens
       return (deva, hk, iast, iso)
 
 app :: Application
