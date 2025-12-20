@@ -1,3 +1,7 @@
 .stack-work
 stack.yaml.lock
 static/js/port.js
+dist-newstyle/*
+.DS_Store
+*.hi
+*.o
